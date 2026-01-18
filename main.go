@@ -1,11 +1,3 @@
-#!/bin/bash
-echo "Building GoFuzz..."
-go mod init gofuzz
-go mod tidy
-go build -o gofuzz main.go
-echo "Build complete! Run: ./gofuzz --help"
-┌─[root]──[dig48]──[~/bugbounty/tools/test_fuzz]
-└──╼ $ cat main.go
 // main.go (fixed version)
 package main
 
